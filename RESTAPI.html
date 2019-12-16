@@ -9,7 +9,7 @@
     <link rel = "stylesheet" href = "style/style.css">
     <link rel="icon" href="style/FaceLogo.jpg" type="image/icon type">
 
-    <title>Abhinav Gorantla</title>
+    <title>REST API- Abhinav Gorantla</title>
 </head>
 <body>
     <div class="parallax">
@@ -74,7 +74,37 @@
                         Here, we are importing the Flask module. Observe the capital letters in the words Api, Flask and Resource. This shows that we are importing a class.
                         After importing these required modules, we then create a sample data space. Usually for real world applications, we link a database using mySQL but here, for this mini 
                         project, a sample data with three  or four users will also get the job done.<br><br>
-                        <img src = "style/img2.jpg" alt="users">
+                        <img src = "style/img2.jpg" alt="users"><br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Next I created a class "Users" which has all the endpoints where data can be accessed using the API. I defined the GET, POST, PUT and DELETE functions. Each of them had 
+                        different sets of input data i.e different URL endpoints as you will see below. I wanted to design the GET method to make the user sign in with their account. But, as I did not 
+                        know how to encryot the user passwords, I changed it's function to get the details of the user.
+                        <img src = "style/img3.JPG" alt = "Class - Users"><br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        The GET method takes in user password and username as it's inputs and gives out the message "Logged in as {Username}." as output. If the password is wrong then, it returns 
+                        the message "Password incorrect.". All the other methods are listed below and are self explanatory.<br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        The POST method is used to create a new user.
+                        <img src = "style/img4.JPG" alt = "POST method"><br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        The PUT method is used to update the data of an existing user.
+                        <img src = "style/img5.JPG" alt  = "PUT method"><br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        You will probably know what the DELETE method is supposed to do.
+                        <img src = "style/img6.JPG" alt = "DELETE method"><br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Now I had a basic API. To make use of it I had to define URLs with endpoints. These endpoints are the data points where the functionswe defines earlier can access their input values.
+                        We do this by:
+                        <img src = "style/img7.JPG" alt = "add-resource"><br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        I added the paths by declaring several URLs using the api.add_resource(class, path1, path2, ....). After all this you need to test your REST API. This is done using an API testing tool.
+                        Some commonly used API testing tools are <a href = "https://www.getpostman.com/">Postman</a> and <a href = " ">Insomnia</a>. For testing my project, I used Postman.<br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        I have added only the test results of POST in this blog. You can try for all other methods also.
+                        <img src = "style/img8.JPG" alt = "Postman test"><br><br>
+                        <br><br>
+                        You can get the documentation and code for my project <a href = "https://github.com/AbhinavGor/Sign-In-REST-API">here</a>.
+                        
                         </p>                        
                 </p>
                 <div class="quotes">
