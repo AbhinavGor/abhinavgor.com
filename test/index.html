@@ -4,13 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel = "stylesheet" href = "style.css">
+  <script>
+    $(document).ready(function() {
+		$(document).delegate('.open', 'click', function(event){
+			$(this).addClass('oppenned');
+			event.stopPropagation();
+		})
+		$(document).delegate('body', 'click', function(event) {
+			$('.open').removeClass('oppenned');
+		})
+		$(document).delegate('.cls', 'click', function(event){
+			$('.open').removeClass('oppenned');
+			event.stopPropagation();
+		});
+	});
+  </script>
 
   <title>Document</title>
 </head>
 <body>
-  <form id="myForm" name="test-1" action="C:\Users\Abhinav\OneDrive\Desktop\Temp In\PHPFiles\processorder.php" method="post">
-    <input name="fname"><input name="lname"><br>
-    <input type = "submit" value = "Submit">
-  </form>
+  <h1>
+    Click on the hamburger icon →
+  </h1>
+  <div  class="open">
+    <span class="cls"></span>
+    <span>
+      <ul class="sub-menu ">
+        <li>
+          <a href="#about" title="about">Sobre / About</a>
+        </li>
+        <li>
+          <a href="#skills" title="skills">Habilidades / Skills</a>
+        </li>
+        <li>
+          <a href="#jobs" title="jobs">Trabalhos / Jobs</a>
+        </li>
+        <li>
+          <a href="#contact" title="contact">Contato / Contact</a>
+        </li>
+      </ul>
+    </span>
+    <span class="cls"></span>
+  </div>
+  
+  
+  <!-- <a href="https://codepen.io/sergioandrade/pen/pXmKJv" class="button" title="Check out my new Pen">Check out my new Pen</a> -->
+  
+  <div class="container">
+    Check out my new pen
+    <br>
+    <br>
+  </div>
+  <div class="container">  
+    <a href="https://codepen.io/sergioandrade/full/pXmKJv" target="_blank" class="card">
+      <img src="https://pbs.twimg.com/card_img/1150575454346194947/R5b7DGbV?format=png&name=600x314" alt="">
+      <figcaption>
+        Countdown with grid css
+      </figcaption>
+    </a>
+  
+  </div>
+  
 </body>
 </html>
