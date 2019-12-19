@@ -99,7 +99,7 @@ nav {
       position: fixed;
       height: 100vh;
       width: 100%;
-      right: 3px;
+      right: 1px;
       color: black;
       flex-direction: column;
       clip-path: circle(100px at 90% -10%);
