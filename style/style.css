@@ -16,6 +16,7 @@ body {
 
 button {
 	font-family: 'Poppins', sans-serif;
+        text-spacing : 5px;
 }
 
 header {
