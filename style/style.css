@@ -45,7 +45,7 @@ footer {
     flex: 1;
     font-weight: 400;
     letter-spacing: 8px;
-    font-family: 'Playfair Display SC', serif !important;
+    font-family: 'IBM Plex Serif', serif !important;
 }
 .logo {
     margin-left: 45%;
