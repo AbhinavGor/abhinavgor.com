@@ -4,11 +4,88 @@
 	padding: 0px;
 	box-sizing: border-box;
 }
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  margin: 20px 10px 20px 20px;
+  padding: 0 8px;
+}
+.card-index img{
+  width: 100%;
+}
+/* Add some shadows to create a card effect */
+.card-index {
+  background: #f8f8f8;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 100%;
+    margin-right: 100px;
+    margin-left: 10px;
+    transition: 0.3s;
+    border-radius: 5px; 
+    text-decoration: none !important;
+}
+
+.columna .card-index:hover{
+  box-shadow: 0 8px 16px 0px rgba(1, 1, 1, 0.2);
+    width : 108%;
+    height: 108%;
+}
+
+.column .card-index:hover{
+  box-shadow: 0 8px 16px 0px rgba(1, 1, 1, 0.2);
+    width : 96%;
+    height: 88%;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 16px 16px;
+}
+.container h2{
+  color: #555;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  font-size: 16px !important;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
 body, html {
+  overflow-x: hidden;
     height: 100%;
   }
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     color: whitesmoke; 
     height: 100%;          
 }
@@ -46,11 +123,13 @@ footer {
     font-weight: 400;
     letter-spacing: 8px;
     font-family: 'IBM Plex Serif', serif !important;
+    animation: flow 1.5s ease;
 }
 .logo {
     margin-left: 45%;
     margin-right: 45%;
-    margin-top : 10%
+    margin-top : 10%;
+    animation: drop 1.5s ease;
 }
 nav {
 	flex: 1;
@@ -180,9 +259,9 @@ nav {
 .introduction{
     flex: 1;
     color: black;
-    background: linear-gradient(to bottom,white, whitesmoke);
     height: auto;
 }
+
 .intro-text h1{
     font-size: 40px;
     font-weight: 500px;
@@ -214,6 +293,20 @@ nav {
     position: relative;
     /* Full height */
     height: 80%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallaxmar {
+    color: slategrey !important;
+    /* The image used */
+    background-image: url("back.jpg") !important;
+    position: relative;
+    /* Full height */
+    height: auto; 
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -383,6 +476,241 @@ input::placeholder {
     
   }
 
+  .cards{
+    display: flex;
+    flex: 3;
+    padding: 20px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    
+  }
+
+  .cardb {
+    position: relative;
+    left: 250px;    
+    transform: translate(0%, 0%);
+    width: 300px;
+    height: 500px;
+    background-color: #fafafa;
+    color: #212121;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 1px 15px rgba(35, 35, 35, .8);
+}
+
+.cardb img {
+    width: 100%;
+}
+
+.carda {
+  position: relative;
+  left: 21%;
+  margin-top: 100px;    
+  transform: translate(0%, 0%);
+  width: 300px;
+  height: 500px;
+  background-color: #fafafa;
+  color: #212121;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0px 1px 15px rgba(35, 35, 35, .8);
+}
+
+.carda img {
+  width: 100%;
+}
+
+.cardc {
+  position: relative;
+  left: 25%;    
+  transform: translate(0%, 0%);
+  width: 300px;
+  height: 500px;
+  background-color: #fafafa;
+  color: #212121;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0px 1px 15px rgba(35, 35, 35, .8);
+}
+
+.cardc img {
+  width: 100%;
+}
+
+.cardd {
+  position: relative;
+  right: inherit;
+  margin-top: 700px;    
+  transform: translate(0%, 0%);
+  width: 300px;
+  height: 500px;
+  background-color: #fafafa;
+  color: #212121;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0px 1px 15px rgba(35, 35, 35, .8);
+}
+
+.cardd img {
+  width: 100%;
+}
+
+.carde {
+position: relative;
+margin-right: 400px;
+margin-top: 700px;    
+transform: translate(0%, 0%);
+width: 300px;
+height: 500px;
+background-color: #fafafa;
+color: #212121;
+border-radius: 15px;
+overflow: hidden;
+cursor: pointer;
+box-shadow: 0px 1px 15px rgba(35, 35, 35, .8);
+}
+
+.carde img {
+width: 100%;
+}
+
+.cardf {
+  position: relative;
+  margin-top: 700px;    
+  transform: translate(0%, 0%);
+  width: 300px;
+  height: 500px;
+  background-color: #fafafa;
+  color: #212121;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0px 1px 15px rgba(35, 35, 35, .8);
+  }
+  
+  .cardf img {
+  width: 100%;
+  }
+  
+.black {
+    z-index: 2;
+    background-image: "pig.png";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    color: #fafafa;
+    transition: opacity .4s ease-in-out;
+    opacity: 0;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.black img {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    border: 2px solid #fafafa;
+    float: left;
+}
+
+.black .text_info {
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    padding: 15px 15px 0 15px;
+    height: auto;
+    background-color: #fafafa;
+}
+
+.desc {
+    width: calc(100%);
+    background-color: #fafafa;
+    overflow: hidden;
+    margin-bottom: -300px;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.desc h1 {
+    margin-bottom: 15px;
+}
+
+.desc p {
+    font-size: .9rem;
+    line-height: 1.8rem;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.info {
+    height: calc(100% + 30px);
+    width: calc(100% + 30px);
+    background-color: #fafafa;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 50%;
+    padding: 15px 0;
+    transform: translateX(-50%);
+
+}
+
+.introductionc{
+  margin-top: 5vh;
+  text-align: center;
+}
+
+.introductionc h1{
+font-size: 40px;
+font-weight: 500px;
+margin-left: 10%;
+margin-right: 10%;
+background: linear-gradient(to right, #7D7D91, #FFFFFF);
+text-align : center;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.info h1 {
+  font-family: 'Poppins', sans-serif !important;
+    font-weight: 300;
+}
+
+.info .col {
+    width: 33%;
+}
+
+.info .col i {
+    font-size: 1.8rem;
+}
+.column {
+  float: left;
+  width: 20%;
+  margin: 20px 10px 20px 20px;
+  padding: 0 8px;
+}
+
+.columna {
+  float: left;
+  width: 20%;
+  margin: 20px 30px 20px 20px;
+  margin-top: 100px;
+  padding: 0 8px;
+}
+
 @media screen and (max-width: 768px){
     .button{
         font-size: 16px;
@@ -398,6 +726,23 @@ input::placeholder {
         margin-top: 5vh;
         text-align: center;
     }
+
+    .introductionc{
+      margin-top: 5vh;
+      
+      text-align: center;
+  }
+
+  .introductionc h1{
+    font-size: 40px;
+    font-weight: 500px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: linear-gradient(to right, #7D7D91, #FFFFFF);
+    text-align : center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
     .intro-text h1{
         font-size: 30px;
 
@@ -413,4 +758,29 @@ input::placeholder {
         margin-right: auto;
         margin-left: 40%;
     }
+}
+
+
+@keyframes drop{
+  0%{
+      opacity: 0;
+      transform: translateY(-80px);
+  }
+
+  100%{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+@keyframes flow{
+  0%{
+      opacity: 0;
+      transform: translateX(-1000px);
+  }
+
+  100%{
+      opacity: 1;
+      transform: translateX(0px);
+  }
 }

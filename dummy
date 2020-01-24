@@ -1,0 +1,159 @@
+<div class="cards">
+                        <div class="column">
+                        <div id="test" class="cardb">
+                            <div class="cover">
+                                <img src="style/pig.png">
+                                <div class="black">
+                                    <img src="style/FaceLogo.jpg">
+                                    <div class="text_info">
+                                        <h4>The Pi Game</h4>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="text">
+                                <div class="desc">
+                                    <h4>A Python-Flask project</h4>
+                                    <p>
+                                        Memorize upto 10,000 decimal digits of <strong>Pi</strong> using this Python-Flask web application.
+                                    </p>
+                                </div>
+                    
+                                <div id="test" class="info">
+                                    <div class="col">
+                                        <h5>220K</h5>
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                    <div class="col">
+                                        <h5>5.4M</h5>
+                                        <i class="far fa-eye"></i>
+                                    </div>
+                                    <div class="col">
+                                        <h5>32K</h5>
+                                        <i class="fas fa-share-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                        </div>
+                        <div class="column">
+                        <div id="test" class="carda">
+                            <div class="cover">
+                                <img src="style/pig.png">
+                                <div class="black">
+                                    <img src="style/FaceLogo.jpg">
+                                    <div class="text_info">
+                                        <h4>The Pi Game</h4>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="text">
+                                <div class="desc">
+                                    <h4>A Python-Flask project</h4>
+                                    <p>
+                                        Memorize upto 10,000 decimal digits of <strong>Pi</strong> using this Python-Flask web application.
+                                    </p>
+                                </div>
+                    
+                                <div id="test" class="info">
+                                    <div class="col">
+                                        <h5>220K</h5>
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                    <div class="col">
+                                        <h5>5.4M</h5>
+                                        <i class="far fa-eye"></i>
+                                    </div>
+                                    <div class="col">
+                                        <h5>32K</h5>
+                                        <i class="fas fa-share-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                        </div>  
+                        
+                        <div class="column">
+                        <div id="test" class="cardc">
+                            <div class="cover">
+                                <img src="style/pig.png">
+                                <div class="black">
+                                    <img src="style/FaceLogo.jpg">
+                                    <div class="text_info">
+                                        <h4>The Pi Game</h4>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="text">
+                                <div class="desc">
+                                    <h4>A Python-Flask project</h4>
+                                    <p>
+                                        Memorize upto 10,000 decimal digits of <strong>Pi</strong> using this Python-Flask web application.
+                                    </p>
+                                </div>
+                    
+                                <div id="test" class="info">
+                                    <div class="col">
+                                        <h5>220K</h5>
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                    <div class="col">
+                                        <h5>5.4M</h5>
+                                        <i class="far fa-eye"></i>
+                                    </div>
+                                    <div class="col">
+                                        <h5>32K</h5>
+                                        <i class="fas fa-share-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                        </div>
+
+                        <div class="column">
+                        <div id="test" class="cardd">
+                            <div class="cover">
+                                <img src="style/pig.png">
+                                <div class="black">
+                                    <img src="style/FaceLogo.jpg">
+                                    <div class="text_info">
+                                        <h4>The Pi Game</h4>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="text">
+                                <div class="desc">
+                                    <h4>A Python-Flask project</h4>
+                                    <p>
+                                        Memorize upto 10,000 decimal digits of <strong>Pi</strong> using this Python-Flask web application.
+                                    </p>
+                                </div>
+                    
+                                <div id="test" class="info">
+                                    <div class="col">
+                                        <h5>220K</h5>
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                    <div class="col">
+                                        <h5>5.4M</h5>
+                                        <i class="far fa-eye"></i>
+                                    </div>
+                                    <div class="col">
+                                        <h5>32K</h5>
+                                        <i class="fas fa-share-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                        </div>
