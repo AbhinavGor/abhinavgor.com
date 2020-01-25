@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif|Poppins&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "style/style.css">
+    <link rel="icon" href="style/FaceLogo.jpg" type="image/icon type">
+
+    <title>SafePass- Abhinav Gorantla</title>
+</head>
+<body>
+    <div class="parallax">
+            <header>
+                    <div class="logo-container">
+                        <h2 >ABHINAV GORANTLA</h2>
+                    </div> 
+                    <nav class = "nav-hamburger">
+                        <div class="hamburger">
+                          <div class="line"></div>
+                          <div class="line"></div>
+                          <div class="line"></div>
+                        </div>
+                        <ul class="nav-links-hamburger">
+                            <li><a href = "index.html">Home</a></li>
+                            <li><a href = "">Resume</a></li>
+                            <li><a href = "https://github.com/AbhinavGor">Github</a></li>
+                            <li><a href = "blog.html">Blog</a></li>
+                            <li><a href = "contactus.html">Contact Me</a></li>
+                        </ul>
+                      </nav>
+                </header>
+                <div class="intro">
+                        <div class="logo">
+                            <img src = "style/FaceLogo.svg">
+                        </div>
+                </div>
+    </div>
+
+    <div class = "introduction">
+        <br><br>
+        <div class="intro-text">
+            <h1 class = "card-head">SafePass.com - Generate secure passwords.</h1>
+            <h4 class="card-head-subs">25 Jan 2020 / <a href = "#Share">Share</a> / <a href = "#Tags">Tags</a></h4>
+            <p>
+                SafePass.com is a website with PHP backend which generates you random secure passwords according to your needs.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here is a brief explanation of all the functions I used to build this website and how they work. The website allows users to generate secure passwords. I started up with setting up checkboxes to allow users 
+                to select what all sets of characters they want in their passwords. The character set options include:
+                <br><br><br>
+                <img src = "style/safe1.jpg" alt = "Charsets">
+                <br><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Users get to select the character select the character sets which get appended to the initial empty set of characters. This set of
+                characters then get passed on to a random string generator. This "random string generator" I'm mentioning here is basically a string shuffler function pre-defined in PHP.
+                 The character set that we pass onto the random string generator is nothing but a very long string of integers, characters and special characters. The exact syntax of the code needed 
+                to shuffle the string is "str_shuffle($charset)". This set of characters gets shuffled by the inbuilt PHP function and then sent on for further processing. This "further processing" involves MD5 Hashing.
+            </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I'm not going to discuss more on <a href = "https://en.wikipedia.org/wiki/MD5">MD 5 Hashing</a> as 
+                that would compromise the integrity of the website.  The form handling method used here is POST method. This ensures that sensitive details aren't given away from the URL.
+                MD5 hashing is also not applied for all the combinations of character sets provided by the user.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The user gets a password according to their needs after submitting the form. This is a screenshot of the final hosted website which you can 
+                find <a href = ""> here</a>.
+                <br><br><br>
+                <img src = "style/safe2.jpg" alt = "website">
+                <br><br><br>
+            </p>
+            <p>
+                My future plans for this project include using better hashing algorithms like SHA 1 or using an actual crytography agorithm instead of a message-digest algorithm like MD5 or 
+                SHA. 
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can find all the documentation and code for this website <a href = "https://github.com/AbhinavGor/SafePass.com">here</a>.
+                <br><br><br><br>
+            </p>
+            
+        </div>
+    </div>
+    
+    <div class="parallaxbottom">
+        <footer> 
+            <div class="icons">
+                <a href = "https://www.facebook.com/abhinav.gorantla.22"><img src = "style/fb.svg"></a>&nbsp;
+                <a href = "https://www.instagram.com/abh_nav.gorantla/"><img src = "style/instagram.svg"></a>&nbsp;
+                <a href = "https://github.com/AbhinavGor"><img src = "style/github.svg"></a>&nbsp;
+                <a href = "https://twitter.com/Abhinav_Gor"><img src = "style/twitter.svg"></a>&nbsp;
+                <div class="copright">&copy Abhinav Gorantla</div>
+            </div>           
+        </footer>
+    </div>
+    <script src="style/app.js"></script>
+</body>
+</html>
